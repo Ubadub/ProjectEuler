@@ -1,5 +1,7 @@
-/*
- * Skeleton class for future Project Euler solutions in Scala
+/**
+ * Project Euler Problem #6
+ *
+ * Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
  */
 
 object Euler0006 {

@@ -1,3 +1,9 @@
+/*
+ * Project Euler Problem #3
+ *
+ * What is the largest prime factor of the number 600851475143?
+ */
+
 object Euler0003 {
   val primes: Stream[Int] = 2 #:: Stream.from(3).filter(i => primes.takeWhile(j => j * j <= i).forall(k => i % k > 0))
 
