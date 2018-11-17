@@ -5,9 +5,7 @@
  */
 
 object Euler0016 {
-  val twos: Stream[BigInt] = Stream.cons(BigInt(2), twos)
-
   def main(args: Array[String]): Unit = {
-    println(twos.take(1000).product.toString.map(_.asDigit).sum)
+    println(BigInt(2).pow(1000).toString.map(_.asDigit).sum)
   }
 }
