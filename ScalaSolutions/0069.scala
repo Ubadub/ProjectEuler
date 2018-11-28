@@ -8,7 +8,7 @@ object Euler0069 {
 
   val LIMIT = 1000000
 
-  // instead of brute-forcing it (commented out above), we take advantage of Euler's product formula for phi(n)
+  // instead of brute-forcing it, we take advantage of Euler's product formula for phi(n)
  
   val primes: Stream[Long] = 2L #:: Stream.from(3).map(_.toLong).filter(i => primes.takeWhile(j => j * j <= i).forall(k => i % k > 0))
 
